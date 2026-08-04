@@ -27,17 +27,17 @@ next couple of releases, we'll likely reach reasonably full parity with Vault
 Enterprise and continue innovating in novel directions.
 
 Lack of a formal working group hasn't negatively affected us, as so far we've
-mostly routed through OpenSSF when relevant discussions needed to occur.
+mostly routed through OpenSSF staff when relevant discussions needed to occur.
 
 On the whole, things are going very well for the project.
 
 ### Challenges
 
 - Marketing and project visibility help is always appreciated.
-- AI-assisted CVE deluge has continued, though OpenSSF has continued to try to
-  enable the project to get access to either Alpha/Omega or newer replacement
-  projects to help get ahead of this. The broader community has been able to
-  keep up with volume just fine, though.
+- AI-assisted CVE deluge has continued, though OpenSSF staff has continued to
+  try to enable the project to get access to either Alpha/Omega or newer
+  replacement projects to help get ahead of this. The broader community has
+  been able to keep up with volume just fine, though.
 
 ## Leadership
 
@@ -170,7 +170,27 @@ OpenBao contributors continue to work with other projects such as
 [ESO](https://github.com/external-secrets/external-secrets/issues/6446)
 and [FluxCD](https://fluxcd.io/blog/2026/07/flux-openbao-secrets-signatures/).
 
-### Horizontal Scalability WG
+### Development WG
+
+The Development WG is a top-level working group reporting to the OpenBao TSC,
+focused on leading all day-to-day development actions. It directly handles
+roadmap planning (subject to approval by the TSC), handles security incidents,
+and has spun off a number of project-scoped sub-working groups discussed below:
+
+- **Horizontal Scalability WG**, focused on improving scalability of OpenBao.
+  When forked, OpenBao had no horizontal scalability and only had high
+  availability based on Vault Community/Enterprise edition's open core
+  feature differentiation.
+- **Namespaces WG**, focused on bringing strong multi-tenancy to OpenBao.
+- **UI WG**, focused on improvements to OpenBao's UI.
+- **PKCS#11/KMS WG**, focused on using and integrating with various third-party
+  hardware security modules or key management systems, such as in Transit, PKI,
+  or for auto-unseal.
+- **Supply Chain Security WG**, focused on meeting OpenSSF project
+  requirements and improving OpenBao's security posture in our
+  dependency tree.
+
+#### Horizontal Scalability WG
 
 The Horizontal Scalability WG saw the release of its flagship feature, Raft
 horizontal scalability, and is working towards PostgreSQL horizontal
@@ -178,7 +198,7 @@ scalability. Designs for future write scalability are under discussion and
 the community sees continued involvement and will continue for the foreseeable
 future.
 
-### Namespaces WG
+#### Namespaces WG
 
 The Namespaces WG had previously underseen the release of the namespaces
 feature and just shipped per-namespace sealing via Shamir's (manual
@@ -192,13 +212,13 @@ namespaces WG may fold into the horizontal scalability WG or may find other
 avenues to continue. This is expected as namespaces were a broad but
 self-contained agenda.
 
-### UI WG
+#### UI WG
 
 The UI WG initially was working on a rewrite of the UI in React. This effort
 has largely stalled and will not be continued. The UI WG is effectively
 discontinued and may be formally disbanded later.
 
-### PKCS#11/KMS WG
+#### PKCS#11/KMS WG
 
 The PKCS#11/KMS WG continues to see broad participation from multiple
 entities. Many new KMS libraries have been built especially as support for
@@ -207,7 +227,7 @@ this WG's immediate focus but work on KMIP server support is also happening.
 This working group will likely continue indefinitely and sponsor most of the
 post-quantum adoption work in the future as well.
 
-### Supply Chain Security WG
+#### Supply Chain Security WG
 
 The WG has seen varying levels of participation and interest but overall
 achieved various improvements such as adopting `security-insights.yml`, the
@@ -217,7 +237,7 @@ adoption of OSPS over the finish line.
 
 ### Marketing WG
 
-While the Marketing WG is in motion to become its own dedicated top-level WG,
+While the Marketing WG is in motion to become our second dedicated top-level WG,
 the community was able to achieve several improvements. It established the
 already mentioned [ecosystem page](https://openbao.org/ecosystem/) which grew
 already to 20+ members through proactive outreach. In addition, the
